@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+/* src/App.css */
+
+/* 通用重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 背景 & 字体 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 顶层容器 */
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* 标题、文字 */
+h1, h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+p {
+  margin-bottom: 1rem;
+  color: #444;
 }
 
-.App-link {
-  color: #61dafb;
+/* 按钮 */
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin-right: 0.3rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #eee;
+}
+button:hover {
+  background-color: #ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 列表 */
+ul {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+ul li {
+  margin: 0.3rem 0;
+}
+
+/* 输入框 */
+input[type="text"],
+input[type="number"] {
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 0.4rem;
+}
+
+/* 表格 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+table thead {
+  background-color: #f0f0f0;
+}
+
+/* 主内容区域 */
+.main-content {
+  margin-top: 1rem;
 }
